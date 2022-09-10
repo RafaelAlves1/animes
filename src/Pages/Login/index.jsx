@@ -1,8 +1,6 @@
-import { Google } from '@mui/icons-material';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useContext, useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 import { AuthGoogleContext } from '../../hooks/authGoogle';
 
 export default function Login() {

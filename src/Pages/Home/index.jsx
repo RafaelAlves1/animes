@@ -1,6 +1,5 @@
 import { Box, Container } from '@mui/material';
-import { useContext, useEffect, useState } from 'react';
-import { toast } from 'react-toastify';
+import { useContext } from 'react';
 import AppBarComp from '../../Components/AppBarComp';
 import MainAnimes from '../../Components/MainAnimes';
 import FourAnimes from '../../Components/FourAnimes';

@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Container,
-  Input,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Box, Button, Container, TextField } from '@mui/material';
 import { useContext } from 'react';
 import AppBarComp from '../../Components/AppBarComp';
 import { AuthGoogleContext } from '../../hooks/authGoogle';
@@ -14,8 +7,6 @@ export default function Perfil() {
   const { user, signOut } = useContext(AuthGoogleContext);
 
   const userLogado = user;
-
-  console.log(user);
 
   return (
     <Box>
