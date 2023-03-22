@@ -8,7 +8,7 @@ export default function Login() {
   const [animes, setAnimes] = useState([]);
 
   useEffect(() => {
-    fetch(`https://gogoanime.herokuapp.com/popular`)
+    fetch(`https://gogoanime.consumet.stream/popular`)
       .then((response) => response.json())
       .then((animelist) => {
         setAnimes(animelist);

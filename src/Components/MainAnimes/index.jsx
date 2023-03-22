@@ -7,7 +7,7 @@ export default function MainAnimes() {
   const [page, setPage] = useState(5);
 
   useEffect(() => {
-    fetch(`https://gogoanime.herokuapp.com/popular?page=${page}`)
+    fetch(`https://gogoanime.consumet.stream/popular?page=${page}`)
       .then((response) => response.json())
       .then((animelist) => {
         setAnimes(animelist);

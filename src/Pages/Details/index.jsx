@@ -11,7 +11,7 @@ export default function Details() {
   const { animeId } = useParams();
 
   useEffect(() => {
-    fetch(`https://gogoanime.herokuapp.com/anime-details/${animeId}`)
+    fetch(`https://gogoanime.consumet.stream/anime-details/${animeId}`)
       .then((response) => response.json())
       .then((animelist) => {
         setAnimes(animelist);

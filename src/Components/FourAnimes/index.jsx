@@ -9,7 +9,7 @@ export default function FourAnimes() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    fetch(`https://gogoanime.herokuapp.com/popular?page=${page}`)
+    fetch(`https://gogoanime.consumet.stream/popular?page=${page}`)
       .then((response) => response.json())
       .then((animelist) => {
         setFourAnimes(animelist);
